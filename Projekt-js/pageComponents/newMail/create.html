@@ -1,0 +1,20 @@
+<br><br><br><br>
+<div id="create">
+    <h4>New mail</h4>  
+    <form name="mailForm">
+        <label>
+            <input id="assigneesInput" type="text" name="email" ng-model="email.receivers" ng-change="validateEmail()" ng-list placeholder="To" required>
+            <div ng-show="mailForm.email.$invalid && !mailForm.email.$isValid" class="msg">Email address is required.</div>
+            <div ng-show="!validEmail && !mailForm.email.$invalid" class="msg">Email is not valid.</div>
+        </label>
+		<label>
+            <input id="titleInput" ng-change="validateTitle()" type="text" name="title" ng-model="email.title" placeholder="Subject" required>
+            <div ng-show="mailForm.title.$invalid && !mailForm.title.$isValid" class="msg">Subject is required.</div>
+        </label>
+        <label>
+            <textarea id="contentInput" ng-change="validateContent()" ng-model="email.content" name="content" placeholder="Message" required></textarea>
+            <div ng-show="mailForm.content.$invalid && !mailForm.content.$isValid" class="msg">This cannot be empty</div>
+        </label>
+        <button ng-disabled="mailForm.$invalid" ng-click="sendEmail()">Send email</button>
+    </form>
+</div>

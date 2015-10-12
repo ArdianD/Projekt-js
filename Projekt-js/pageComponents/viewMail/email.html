@@ -1,0 +1,19 @@
+<br><br><br><br><br>
+<div id="view" data-ng-init="getEmail()">
+    <section>
+        <header>
+            <h3><strong>{{email.title}}</strong></h3>
+            <p>Sender: {{email.sender}}</p>
+            <p>Receiver: {{email.receiver}}</p>
+            <time>Data: {{email.date | date: 'fullDate'}}</time>
+        </header>
+        <article>
+            {{email.content}}
+        </article>
+        <footer>
+            <button type="button" ng-click="deleteMail()">Delete</button>
+            <button ng-click="reply()">Reply</button>
+        </footer>
+    </section>
+    </form>
+</div>

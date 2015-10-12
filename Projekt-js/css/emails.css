@@ -1,0 +1,45 @@
+#create, #view  {
+  width: 60rem;
+  padding: 20px;
+  margin: 0 auto;
+}
+#create h4 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#create textarea {
+  width: 55rem;
+  min-height: 100px;
+}
+
+#create input, #create textarea {
+	background-color: rgba(255, 0, 0, 0.8); 
+    width: 60.5rem;
+    margin-bottom: 0.5rem;
+    height: 1rem;
+    padding: 0.5rem;
+    float: left;
+}
+
+#create .msg::after {
+    border-color: red transparent;
+    border-style: solid;
+    display: block;
+    width: 0;
+    z-index: 1;
+}
+
+#create .msg {
+    background: #ffffff;
+    border: 1px solid red;
+    color: red;
+    height: auto;
+    width: 61.5rem; 
+}
+#view header, #view h4, #view article {
+  margin-bottom: 15px;
+}
+
+.marked {
+    background: #CC66FF;
+}

@@ -1,0 +1,17 @@
+<div id="conteiner">
+<search></search>
+</div>
+<div id="inbox">
+        <li ng-repeat="mail in inbox | filter: {title:findmail} | orderBy: '-received'"  class="{{mail.read}}">
+            <a ng-click="read()">
+                <div><p class="sender" ng-bind-html="mail.sender" >From: {{mail.sender}} </p>
+				<div>
+				<p class="time">Received: {{mail.received | date: 'dd/MM/yyyy'}}</p><button id="delete" ng-click="delete()">Delete</button></div>
+				<div>
+				<p>Title:
+                <strong class="title" ng-bind-html="mail.title | highlight:findmail"> {{mail.title | limitTo: 30}}</strong></p>
+				</div>
+                <p class="content" ng-bind-html="mail.content" >{{mail.content}}</p>
+            </a>
+        </li>
+</div>

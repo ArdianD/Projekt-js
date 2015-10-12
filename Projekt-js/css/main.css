@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    outline: none !important;
+}
+
+.mailpannel {
+	/*-webkit-border-radius: 20px; 
+	-khtml-border-radius: 20px;    
+	-moz-border-radius: 20px; 
+	border-radius: 20px;*/
+	background-color : rgba(0, 0, 51, 0.3);
+}
+
+.top, .bottom {
+	position: fixed;
+}
+
+.left, .right {
+	position: fixed;
+	top: 0; bottom: 0;
+	width: 10px;
+	}
+.left { left: 0; }
+.right { right: 0; }
+
+.top{
+	left: 0; right: 0;
+	height: 25px;
+}
+		
+.bottom {
+	left: 0; right: 0;
+	height: 10px;
+	}
+.top { top: 0; }
+.bottom { bottom: 0; }
+
+#inbox a, #outbox a {
+  text-decoration: none;
+}
+
+#inbox li, #outbox li {
+  padding: 10px;
+  border: 1px solid;
+  margin: 5px;
+  cursor: pointer;
+  width: 95%;
+  margin: 0 auto
+}
+
+#inbox .false {
+	background-color : rgba(96, 0, 0, 0.6);
+	font-weight: bold;
+}
+
+#inbox .true, #outbox .true {
+	background-color : rgba(0, 0, 0, 0);
+}
+
+#inbox .true .sender, #inbox .true .content, #inbox .true .title  {
+  color: black;
+}
+
+p.time {
+  margin-left: 10px;
+  float: right;
+  display: inline-block;
+  color: black;
+}
+
+#outbox p.time {
+  float: right;
+}
+
+#inbox .sender, #outbox .receivers {
+	color: black;
+	padding-bottom: 5px;
+	display: inline-block;
+}
+
+#outbox .receivers {
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#inbox	button {
+  float: right;
+  width: 60px;
+  padding: 10px;
+  color: rgba(255,255,255,1);
+  margin-left: 5px;
+}
+
+#inbox .true button {
+  background: #e45d49;
+}
+
+#inbox .false button {
+  color: black;
+}
+
+
+#inbox .title, #outbox .title {
+	color: gold;
+	padding-bottom: 5px;
+}
+
+#outbox .content, #outbox .receivers, #outbox .title{
+  color: black !important;
+}
+
+#inbox .content, #outbox .content {
+	color: black;
+	max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+div#inbox, div#outbox {
+	width: 100%;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+.menu {
+	width: 1000px; 
+	height: 50px; 
+	border: 1px solid #000; 
+	border-radius: 5px; 
+	background-color: #000; 
+	margin: 40px auto;
+	
+}
+
+#opcje{font-size: 18px;color: #FFF;position: absolute;margin:0;padding-top: 16px; padding-right: 10px; margin-left: 320px;}
+
+#opcje ul{ margin:0; padding: 0;}
+#opcje ul li{float:left;margin-left: 20px;	list-style: none;}
+#opcje ul li a{text-decoration: none;color: inherit;}
+
+#config {
+	text-align: center;
+	margin-top: 10%;
+}
+
+#conteiner {
+	margin: 90px auto 20px auto;
+	text-align: center;
+}

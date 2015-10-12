@@ -1,0 +1,70 @@
+.color-change {
+    width: 30px;
+    height: 60px;
+    display: inline-block;
+    margin: 10px;
+    border: 4px #ffffff;
+}
+
+.color-change.white {
+    background: : white;
+}
+
+.color-change.red {
+   background: red;
+}
+
+.color-change.green {
+    background-color: green;
+}
+
+.color-change.blue {
+    background-color: blue;
+}
+
+.color-change.yellow {
+    background-color: yellow;
+}
+
+.color-change.pink {
+    background-color: pink;
+}
+
+.color-change.black {
+    background-color: black;
+}
+
+#ui-view {
+    width: 99%;
+    float: right;
+    margin-top: -95px;
+    margin-bottom: 30px;
+}
+
+#navlist {
+	text-align:center;
+}
+
+#navlist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+
+
+.red {
+    background-color: #e90d00;
+}
+
+.yellow {
+    background-color: #efcc40;
+}
+
+.green {
+    background-color: #1f8c22;
+}
+
+.blue {
+    background-color: #158cba;
+}

@@ -1,0 +1,30 @@
+<div id="config">	
+	<div>
+		<br><br><br><br>
+		<h4>Choose a background color:</h4><br>
+		<select ng-model="selectedColor">
+		  <option class="color-change white">white</option>
+		  <option class="color-change red">red</option>
+		  <option class="color-change green">green</option>
+		  <option class="color-change yellow">yellow</option>
+		  <option class="color-change blue">blue</option>
+		</select>
+		<button class="button button-icon ion-plus" ng-click="setColor(selectedColor)">
+			Change
+		</button>
+	</div><br>
+	<div>
+		<h4>Choose a navbar color:</h4><br>
+		<select ng-model="selectedColorNavbar">
+		  <option class="color-change black">black</option>
+		  <option class="color-change red">red</option>
+		  <option class="color-change green">green</option>
+		  <option class="color-change pink">pink</option>
+		  <option class="color-change blue">blue</option>
+		</select>
+		<button class="button button-icon ion-plus" ng-click="setColorNavbar(selectedColorNavbar)">
+			Change
+		</button>
+	</div>
+	<br>
+</div>

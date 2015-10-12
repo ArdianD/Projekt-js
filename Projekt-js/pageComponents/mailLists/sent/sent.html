@@ -1,0 +1,16 @@
+<div id="conteiner">
+<search></search>
+</div>
+<div id="outbox">
+        <li ng-repeat="mail in outbox | filter: findmail | orderBy: '-sent'" class="mailpannel">
+            <a>
+                <div><p class="receivers">To: <span ng-bind-html="mail.receivers.join()">{{mail.receivers}}</span></p>
+                     <p class="time">Sent: {{mail.sent | date: 'dd/MM/yyyy'}}</p></div>
+				<div>
+				<p>Title:
+                <strong class="title" ng-bind-html="mail.title | highlight:findmail">{{mail.title}}</strong> </p>
+				</div>
+                <p class="content" ng-bind-html="mail.content">{{mail.content}}</p>
+            </a>
+        </li>
+</div>

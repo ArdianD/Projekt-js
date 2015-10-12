@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="myapp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Panda3</title>
+    <link rel="stylesheet" href="css/config.css">
+	<link rel="stylesheet" href="css/emails.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+	<script src="services/email_service.js"></script>
+	<script src="services/rest_service.js"></script>
+	<script src="pageComponents/mailLists/inbox/inboxCtrl.js"></script>
+    <script src="pageComponents/mailLists/sent/sentCtrl.js"></script>
+    <script src="pageComponents/configuration/configCtrl.js"></script>
+    <script src="pageComponents/newMail/createCtrl.js"></script>
+    <script src="pageComponents/viewMail/emailCtrl.js"></script>
+	</head>
+
+<body>
+
+    <menu></menu>
+    
+    <div id="ui-view" ui-view></div>
+
+</body>
+
+</html>
